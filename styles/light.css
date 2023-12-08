@@ -24,7 +24,12 @@
 }
 
 .theme_light .header__dark-theme_additional-text {
-  display: none;
+  color: transparent;
+}
+
+.theme__light .header__dark-theme_additional-text::after {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .theme_light .footer__text {
@@ -47,7 +52,12 @@
   }
 
   .theme_auto .header__dark-theme_additional-text {
-    display: none;
+    color: transparent;
+  }
+
+  .theme_auto .header__dark-theme_additional-text::after {
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .footer__text {

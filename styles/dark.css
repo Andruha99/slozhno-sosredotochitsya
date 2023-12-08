@@ -20,8 +20,6 @@
   --background-color: #000028;
 
   --background-img: url(../images/cover-image-dark.png);
-
-  background-color: var(--background-color);
 }
 
 .theme_dark .footer__text {
