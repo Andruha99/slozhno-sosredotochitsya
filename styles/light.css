@@ -27,7 +27,7 @@
   color: transparent;
 }
 
-.theme__light .header__dark-theme_additional-text::after {
+.theme_light .header__dark-theme_additional-text::after {
   background-color: transparent;
   box-shadow: none;
 }
@@ -47,6 +47,7 @@
     --nav-hover-outline: rgba(50, 49, 45, 0.4);
     --section-title-color: #353430;
     --decor-line-color: #353430;
+    --background-color: #fff1f7;
 
     --background-img: url(../images/cover-image-light.png);
   }
