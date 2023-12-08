@@ -26,6 +26,10 @@
   display: none;
 }
 
+.theme_light .footer__text {
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
 @media (prefers-color-scheme: light) {
   .page {
     /* Дублируем переменные светлой темы */
@@ -43,5 +47,9 @@
 
   .theme_auto .header__dark-theme_additional-text {
     display: none;
+  }
+
+  .footer__text {
+    text-shadow: 4px 4px 0 var(--accent-color);
   }
 }

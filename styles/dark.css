@@ -20,3 +20,7 @@
 
   --background-img: url(../images/cover-image-dark.png);
 }
+
+.theme_dark .footer__text {
+  text-shadow: none;
+}
