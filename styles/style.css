@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
   font-size: var(--main-font-size);
   font-weight: 400;
   line-height: 23.4px;
@@ -20,7 +20,8 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 0 1fr minmax(min-content, max-content) 1fr 0;
-  min-block-size: 100vh;
+  min-block-size: 768px;
+  block-size: 100vh;
   padding: 20px;
 }
 
@@ -248,7 +249,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0 1fr 0;
-  min-block-size: 100vh;
+  min-block-size: 768px;
+  block-size: 100vh;
   padding: 20px;
 }
 
@@ -266,6 +268,10 @@
 }
 
 @media (width < 1024px) {
+  .header {
+    min-block-size: 1024px;
+  }
+
   .header__theme-menu {
     justify-self: end;
     align-self: center;
@@ -282,10 +288,15 @@
   .tips-section__item {
     word-spacing: 1px;
   }
+
+  .footer {
+    min-block-size: 1024px;
+  }
 }
 
 @media (width < 768px) {
   .header {
+    min-block-size: 668px;
     padding: 10px;
   }
 
@@ -358,6 +369,7 @@
   }
 
   .footer {
+    min-block-size: 668px;
     padding: 10px;
   }
 }
